@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MovieInformationApp</string>
+    <string name="title_splash_screen">Movie \n Information</string>
+
+    <string name="title_popular_movies">POPULAR</string>
+    <string name="title_now_playing_movies">NOW PLAYING</string>
+    <string name="title_top_rated_movies">TOP RATED</string>
+
+    <string name="overview_movie_information">🎥Overview🎞: %1$s</string>
+    <string name="released_movie_information">📅Released Date📅: %1$s</string>
+    <string name="for_adult_true_information">For adult: 🔞</string>
+    <string name="for_adult_false_information">For adult: ❌</string>
+</resources>

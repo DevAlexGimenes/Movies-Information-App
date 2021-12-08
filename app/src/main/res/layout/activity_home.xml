@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    tools:context=".presentation.home.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager_ImageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="406dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="70dp"
+            android:paddingEnd="70dp"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <Button
+            android:id="@+id/btnPopularMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/title_popular_movies"
+            android:fontFamily="@font/six_caps_regular"
+            android:backgroundTint="#303030"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/llShortcutsAdditional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/shortcut_btn_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnNowPlaying"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/title_now_playing_movies"
+                    android:layout_margin="30dp"
+                    android:padding="10dp"
+                    android:backgroundTint="#303030"
+                    android:fontFamily="@font/six_caps_regular"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shortcut_btn_loss_or_theft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnTopRated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/title_top_rated_movies"
+                    android:layout_margin="30dp"
+                    android:padding="10dp"
+                    android:backgroundTint="#303030"
+                    android:fontFamily="@font/six_caps_regular"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
