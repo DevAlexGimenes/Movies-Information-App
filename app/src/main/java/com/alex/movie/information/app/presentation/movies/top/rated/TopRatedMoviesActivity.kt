@@ -11,8 +11,7 @@ import com.alex.movie.information.app.data.movies.DMoviesInformation
 import com.alex.movie.information.app.presentation.home.HomeActivity
 import com.alex.movie.information.app.presentation.movies.DetailsMovieInformationActivity
 import com.alex.movie.information.app.presentation.movies.MoviesInfoAdapter
-import kotlinx.android.synthetic.main.activity_latest_movies.rv_movies_list
-import kotlinx.android.synthetic.main.activity_latest_movies.toolbar
+import kotlinx.android.synthetic.main.activity_top_rated_movies.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
@@ -22,7 +21,7 @@ class TopRatedMoviesActivity : AppCompatActivity(), MoviesInfoAdapter.OnItemClic
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_latest_movies)
+        setContentView(R.layout.activity_top_rated_movies)
 
         supportActionBar?.hide()
         prepareContent()
@@ -45,9 +44,9 @@ class TopRatedMoviesActivity : AppCompatActivity(), MoviesInfoAdapter.OnItemClic
         progressDialog.setCancelable(false)
         progressDialog.show()
 
-        rv_movies_list.layoutManager = GridLayoutManager(this, 3)
-        rv_movies_list.setHasFixedSize(true)
-        rv_movies_list.adapter = movieAdapter
+        rvMoviesInfoList.layoutManager = GridLayoutManager(this, 3)
+        rvMoviesInfoList.setHasFixedSize(true)
+        rvMoviesInfoList.adapter = movieAdapter
 
         viewModel.getMoviesInfoCoroutines()
         viewModel.moviesInfo().observe(this, Observer {

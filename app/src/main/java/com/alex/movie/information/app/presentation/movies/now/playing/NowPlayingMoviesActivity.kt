@@ -44,9 +44,9 @@ class NowPlayingMoviesActivity : AppCompatActivity(), MoviesInfoAdapter.OnItemCl
         progressDialog.setCancelable(false)
         progressDialog.show()
 
-        rv_movies_list.layoutManager = GridLayoutManager(this, 3)
-        rv_movies_list.setHasFixedSize(true)
-        rv_movies_list.adapter = movieAdapter
+        rvMoviesInfoList.layoutManager = GridLayoutManager(this, 3)
+        rvMoviesInfoList.setHasFixedSize(true)
+        rvMoviesInfoList.adapter = movieAdapter
 
         viewModel.getMoviesInfoCoroutines()
         viewModel.moviesInfo().observe(this, Observer {

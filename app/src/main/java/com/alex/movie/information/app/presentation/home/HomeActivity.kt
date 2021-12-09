@@ -27,10 +27,14 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         supportActionBar!!.hide()
+
         configViewPager2()
         compositePageTransformer()
         onViewPagerChangeCallBack()
+        prepareNavigation()
+    }
 
+    private fun prepareNavigation() {
         btnPopularMovies.setOnClickListener {
             val intent = Intent(this, PopularMoviesActivity::class.java)
             startActivity(intent)

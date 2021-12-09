@@ -22,7 +22,8 @@ data class DMoviesInformation(
     val overview: String?,
 
     @SerializedName("adult")
-    val forAdults: Boolean?,
+    val forAdults: Boolean?
+
 ) : Parcelable {
     constructor() : this("", "", "", "", "", false)
 }

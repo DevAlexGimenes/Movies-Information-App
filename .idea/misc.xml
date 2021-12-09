@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/layout/activity_now_playing_movies.xml" value="0.29483695652173914" />
         <entry key="app/src/main/res/layout/activity_popular_movies.xml" value="0.29483695652173914" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_top_rated_movies.xml" value="0.28804347826086957" />
         <entry key="app/src/main/res/layout/movie_item_poster_path.xml" value="0.29483695652173914" />
         <entry key="app/src/main/res/layout/slider_item_container.xml" value="0.29483695652173914" />
       </map>

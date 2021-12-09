@@ -11,6 +11,7 @@ class DetailsMovieInformationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details_movie_information)
+        supportActionBar?.hide()
 
         val extras = intent.extras
         if (extras != null) {
